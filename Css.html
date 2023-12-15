@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--
+    CSS can be added in 3 ways in HTML :
+    Inline - by using the style attribute inside HTML elements
+    Internal - by using a <style> element in the <head> section
+    External - by using a <link> element to link to an external CSS file
+-->
+<html>
+    <head>
+        <title>Exploring html css tags</title>
+        <!-- Internal CSS inside head tag -->
+        <style>
+            body {background-color: aqua;}
+            h2 {color: green;}
+            p {background-color: pink; width: 30%;}
+        </style>
+
+        <!-- External CSS using link-->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- Inline css -->
+        <h1 style="background-color: aqua; width: 30%; text-align: center;">Exploring CSS section in HTML</h1>
+        <p style="color: tomato; width: 30%; text-align: center;">This is inline css, inside html tag</p>
+
+        <!-- Internal css -->
+        <h2>This is example of Internal css which I have defined inside head tag</h2>
+
+        <!-- External css, importing external page -->
+        <h3>This is the example of external css and importing style.css page to make it beautiful</h3>
+        <p>Lets start css page</p>
+    </body>
+</html>
