@@ -1,15 +1,22 @@
-<!-- 
-    Use the <a> element to define a link
-    Use the href attribute to define the link address
-    Use the target attribute to define where to open the linked document
-    Use the <img> element (inside <a>) to use an image as a link
-Use the mailto: scheme inside the href attribute to create a link that opens the user's email program
--->
 <!DOCTYPE html>
 <html>
      <head>
         <title>Exploring HTML Links</title>
         <link rel="stylesheet" href="Head.css">
+
+        <style>
+            a:link, a:visited{
+                background-color: red;
+                color: white;
+                padding: 15px 25px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+            }
+            a:hover, a:active{
+                background-color: red;
+            }
+        </style>
      </head>
      <body>
         <h1>Exploring HTML Links</h1>
@@ -32,5 +39,8 @@ Use the mailto: scheme inside the href attribute to create a link that opens the
 
         <h2>Links with title</h2>
         <a href="https://www.google.com/" title="Visit Google"> google website</a>
+
+        <h2>Link colors</h2>
+        <a href="https://www.google.com/" target="_blank"> Link_Colors</a>
      </body>
 </html>
