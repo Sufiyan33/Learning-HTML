@@ -1,0 +1,30 @@
+body{
+    background-origin: padding-box;
+    background-color: aquamarine;
+}
+h1{
+    color: black;
+    background-color: lightcoral;
+    width: 30%;
+    border: 20px;
+    text-align: center;
+}
+
+h2{
+    color: black;
+    background-color: lightcoral;
+    width: 30%;
+    border: 20px;
+    text-align: center;
+}
+
+p{
+    color: black;
+    background-color: white;
+    width: 30%;
+    font-size: 200%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    border-color: black;
+    border: 2px solid;
+}
