@@ -1,0 +1,17 @@
+table, th, td{
+    border: 2px solid rgb(0, 0, 0);
+    border-collapse: collapse;
+    padding-left: 3px;
+    margin: 10px;
+
+    /* To make round tables*/
+    border-radius: 10px;
+
+    border-style: dotted;
+
+}
+
+/* Setting table heading and table data colors 
+th, td{
+    background-color: white;
+}
