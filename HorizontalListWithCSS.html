@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--
+    Use the HTML <ul> element to define an unordered list
+    Use the CSS list-style-type property to define the list item marker
+    Use the HTML <li> element to define a list item
+    Lists can be nested
+    List items can contain other HTML elements
+    Use the CSS property float:left to display a list horizontally
+-->
+<html>
+    <head>
+        <title>Making Horizontal List</title>
+        <style>
+            ul{
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+                overflow: hidden;
+                background-color: #333333;
+            }
+            li{
+                float: left;
+            }
+            li a{
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 16px;
+                text-decoration: none;
+            }
+            li a:hover{
+                background-color: #111111;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h2>Creating Horizontal list</h2>
+        <p>Let's use CSS to create Horizontal Navigation menu which looks like website</p>
+
+        <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#News">News</a></li>
+            <li><a href="#Media">Media</a></li>
+            <li><a href="#Contatct">Contact</a></li>
+            <li><a href="#About">About</a></li>
+        </ul>
+    </body>
+</html>
