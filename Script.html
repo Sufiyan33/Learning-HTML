@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Exploring Script Tag </title>
+    </head>
+
+    <body>
+        <h2> use Java script to change text </h2>
+        <p id="demo"></p>
+
+        <script>
+            document.getElementById("demo").innerHTML="Hello HTML with script tag"
+        </script>
+
+        <p style=" background-color: aqua; width: 40%; text-align: center;">Adding button and changing text using JavaScript</p>
+
+        <button type="button" onclick="myFunction()">Click me</button>
+        <p id="test">This is the test</p>
+
+        <script>
+            function myFunction(){
+                document.getElementById("test").innerHTML="Now text has been changed"
+            }
+        </script>
+    </body>
+</html>
