@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exploring HTML Table Styles</title>
+        <style>
+            table, th, td{
+                border: 1px solid black;
+                border-collapse: collapse;
+                padding: 8px;
+            }
+            /* Let's change table syle with Zebra stripes*/
+            tr:nth-child(even){
+                background-color: lightgreen;
+            }
+            /* For vertical zebra strips*/
+            td:nth-child(odd), th:nth-child(even){
+                background-color: orange;
+            }
+
+            /*Use below for combine zebra strips, you can use only one style at a time */
+            tr:nth-child(even){
+                background-color: rgb(rgb(0, 229, 255), rgb(54, 200, 54), rgb(147, 147, 211));
+            } 
+            th:nth-child(even), td:nth-child(odd){
+                background-color: rgb(red, green, rgb(255, 0, 89));    
+            }
+        </style>
+    </head>
+    <body style="background-color: bisque;">
+
+        <h2 style="background-color: green; width: 30%; text-align: center; color: white;">Table with multiple columns & styles</h2>
+        <table style="background-color: tomato;">
+            <colgroup>
+                <col span="2" style="background-color: aqua;">
+                <col span="3" style="background-color: greenyellow;">
+                <!-- use below  style to hide column-->
+                <!-- <col span="1" style="visibility: collapse;"> -->
+            </colgroup>
+            <tr>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wensday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                    <th>Saturday</th>
+                    <th>Sunday</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>8</td>
+                <td>7</td>
+                <td>6</td>
+                <td>4</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>8</td>
+                <td>7</td>
+                <td>6</td>
+                <td>4</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>8</td>
+                <td>7</td>
+                <td>6</td>
+                <td>4</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>NA</td>
+                <td>NA</td>
+                <td>8</td>
+                <td>7</td>
+                <td>NA</td>
+                <td>NA</td>
+                <td>NA</td>
+            </tr>
+        </table>
+    </body>
+</html>
