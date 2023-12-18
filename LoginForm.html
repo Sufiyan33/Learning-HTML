@@ -45,6 +45,68 @@
 
             <input type="submit" value="Submit"> &NonBreakingSpace;
             <input type="button" value="Cancle">
+
+            <h3>Select from Drop down</h3>
+            <label for="cars">Choose a car: </label>
+            <select id="car" name="cars">
+                <option>None</option>
+                <option>Audi</option>
+                <option>Mercedez</option>
+                <option>Odi</option>
+                <option>Maruti</option>
+                <option>Suzuki</option>
+                <option>Hundai</option>
+            </select>
+
+            <h3>Drop down with Size</h3>
+            <label for="cars">Choose a car: </label>
+            <select id="car" name="cars" size="3">
+                <option>None</option>
+                <option>Audi</option>
+                <option>Mercedez</option>
+                <option>Odi</option>
+                <option>Maruti</option>
+                <option>Suzuki</option>
+                <option>Hundai</option>
+            </select>
+
+            <!-- Use shift key to select multiple values -->
+            <h3>Drop down with Multiple Selector</h3>
+            <label for="cars">Choose a car: </label>
+            <select id="car" name="cars" size="3" multiple>
+                <option>None</option>
+                <option>Audi</option>
+                <option>Mercedez</option>
+                <option>Odi</option>
+                <option>Maruti</option>
+                <option>Suzuki</option>
+                <option>Hundai</option>
+            </select>
+
+            <h3>Multi Line input</h3>
+            <textarea rows="5" cols="10">I was writting code in eclipse but now preferring vs code</textarea><br>
+            <input type="submit"> 
+
+            <h3>Clickable button with dialouge box</h3>
+            <button type="button" onclick="alert('Hello World of HTML')">Click me</button>
+
+            <h3> Grouping form data </h3>
+            <fieldset>
+                <legend>Persons : </legend>
+                <label for="name"> Name</label><br>
+                <input type="text" id="name" name="name">
+                <button type="button" onclick="alert('Data has been saved')">Submit</button>
+            </fieldset>
+
+            <h3>DataList elements</h3>
+            <input list="browsers">
+            <datalist id="browsers">
+                <option>Sufiyan</option>
+                <option>Ahmad</option>
+                <option>Qadri</option>
+                <option>Azhari</option>
+            </datalist>
+            <input type="button" value="submit">
         </form>
     </body>
 </html>
