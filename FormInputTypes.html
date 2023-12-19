@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form Input types</title>
+        <style>
+            h2{
+                background-color: black;
+                width: 30%;
+                text-align: center;
+                color: rgb(21, 193, 107);
+            }
+            h3{
+                background-color: aqua;
+                width: 15%;
+                text-align: center;
+            }
+        </style>
+    </head>
+
+    <boyd>
+        <h2>Exploring HTML form various type inputs</h2>
+        <h3>Input type Text</h3>
+
+        <form autocomplete="on">
+            <label for="firstName"> First Name: </label>
+            <input type="text" id="firstName" name="firstName"><br><br>
+            <label for="lastName"> Last Name: </label>
+            <input type="text" id="lastName" name="lastName"><br><br>
+            <input type="button" value="submit"> &nbsp;
+            <input type="button" value="cancel">
+        </form>
+
+        <h3>Input type Password</h3>
+        <form autocomplete="on">
+            <label for="firstName"> First Name: </label>
+            <input type="text" id="firstName" name="firstName"><br><br>
+            <label for="pwd"> Password: </label>
+            <input type="password" id="pwd" name="pwd"><br><br>
+            <input type="button" value="login"> &nbsp;
+            <input type="button" value="cancel">
+        </form>
+
+        <h3>Input type Submit</h3>
+        <form autocomplete="on">
+            <label for="firstName"> First Name: </label>
+            <input type="text" id="firstName" name="firstName"><br><br>
+            <label for="pwd"> Password: </label>
+            <input type="password" id="pwd" name="pwd"><br><br>
+            <input type="submit" value="Submit"> &nbsp;
+            <input type="submit" value="cancel">
+        </form>
+
+        <h3>Input type Reset</h3>
+        <form autocomplete="on">
+            <label for="firstName"> First Name: </label>
+            <input type="text" id="firstName" name="firstName"><br><br>
+            <label for="pwd"> Password: </label>
+            <input type="password" id="pwd" name="pwd"><br><br>
+            <input type="submit" value="Submit"> &nbsp;
+            <input type="submit" value="cancel"> &nbsp;
+            <input type="reset" value="Reset">
+        </form>
+
+        <h3>Input type Radio</h3>
+        <form autocomplete="on">
+            <input type="radio" id="html" name="lang">
+            <label for="html"> HTML </label>
+            <input type="radio" id="css" name="lang">
+            <label for="css"> CSS </label><br><br>
+            <input type="submit" value="Submit"> &nbsp;
+            <input type="submit" value="cancel"> &nbsp;
+            <input type="reset" value="Reset">
+        </form>
+
+        <h3>Input type CheckBox</h3>
+        <form autocomplete="on">
+            <input type="checkbox" id="html" name="lang">
+            <label for="html"> HTML </label>
+            <input type="checkbox" id="css" name="lang">
+            <label for="css"> CSS </label><br><br>
+            <input type="submit" value="Submit"> &nbsp;
+            <input type="submit" value="cancel"> &nbsp;
+            <input type="reset" value="Reset">
+        </form>
+
+        <h3>Input type Button</h3>
+        <input type="button" onclick="alert('Hello I am button')" value="click me">
+
+        <h3>Input type Color</h3>
+        <form>
+            <label for="fcolor">Select your favourite color : </label>
+            <input type="color" id="fcolor" name="fcolor">
+        </form>
+
+        <h3>Input type Date</h3>
+        <form>
+            <label for="birthday">Select your Birthday date : </label><br><br>
+            <input type="date" id="birthday" name="birthday"><br><br>
+            <input type="button" onclick="alert('Date has been saved')" value="submit"> &nbsp;
+            <input type="button" value="cancel"> &nbsp;
+        </form>
+
+        <h3>Input type Date with Restriction</h3>
+        <form>
+            <label for="maxDate">Enter a date before 1980-01-01 : </label><br><br>
+            <input type="date" id="maxDate" name="maxDate" max="1979-12-31"><br><br>
+            <label for="minDate">Enter a date after 2000-01-01 : </label><br><br>
+            <input type="date" id="minDate" name="minDate" min="2000-01-02"><br><br>
+            <input type="button" onclick="alert('Date has been saved')" value="submit"> &nbsp;
+            <input type="button" value="cancel"> &nbsp;
+        </form>
+
+        <h3>Input type DateTime-local</h3>
+        <form>
+            <label for="birthday">Select your date & time : </label><br><br>
+            <input type="datetime-local" id="birthday" name="birthday"><br><br>
+            <input type="button" onclick="alert('Date has been saved')" value="submit"> &nbsp;
+            <input type="button" value="cancel"> &nbsp;
+        </form>
+
+        <h3>Input type Email</h3>
+        <form autocomplete="on">
+            <label for="firstName"> First Name: </label>
+            <input type="text" id="firstName" name="firstName"><br><br>
+            <label for="lastName"> Last Name: </label>
+            <input type="text" id="lastName" name="lastName"><br><br>
+            <label for="email">Email: </label>
+            <input type="email" id="email" name="email"><br><br>
+            <input type="button" value="submit"> &nbsp;
+            <input type="button" value="cancel">
+        </form>
+
+        <h3>Input type Image</h3>
+        <form>
+            <input type="image" src="/Users/sufiyanahmad/Downloads/books.jpg" alt="books" width="100" height="100">
+        </form>
+
+        <h3>Input type File</h3>
+        <label for="myFile">Select file: </label>
+        <input type="file" id="myFile" name="myFile"><br><br>
+        <input type="button" onclick="alert('Date has been saved')" value="submit"> &nbsp;
+        <input type="button" value="cancel"> &nbsp;
+
+        <h3>Input type Month</h3>
+        <form>
+            <label for="month">Select your Birthday month : </label><br><br>
+            <input type="month" id="month" name="month"><br><br>
+            <input type="button" onclick="alert('Date has been saved')" value="submit"> &nbsp;
+            <input type="button" value="cancel"> &nbsp;
+        </form>
+
+        <h3>Input type Number</h3>
+        <form autocomplete="on">
+            <label for="numbers">Select number between 1 to 50 : </label><br><br>
+            <input type="number" id="numbers" name="numbers" min="1" max="50"><br><br>
+            <input type="button" onclick="alert('Date has been saved')" value="submit"> &nbsp;
+            <input type="button" value="cancel"> &nbsp;
+        </form>
+
+        <h3>Input type Range</h3>
+        <form autocomplete="on">
+            <label for="valume"> Select range for volumne: </label>
+            <input type="range" id="valume" name="valume" min="0" max="100">
+        </form>
+
+        <h3>Input type Search</h3>
+        <form autocomplete="on">
+            <label for="search"> Search in google: </label><br><br>
+            <input type="search" id="search" name="search"><br><br>
+            <input type="button" onclick="alert('Date searching')" value="Search"> &nbsp;
+            <input type="button" value="cancel"> &nbsp;
+        </form>
+
+        <h3>Input type Telephone</h3>
+        <form autocomplete="on">
+            <label for="phone"> Enter a Telephone number: </label><br><br>
+            <input type="tel" id="phone" name="phone" placeholder="123-23-12335" pattern="[0-9]{3}-[0-9]{2}-[0-9]{}3" required><br><br>
+            <small>Format : 123-34-12242</small><br><br>
+            <input type="button" onclick="alert('Phone dialing')" value="Dial"> &nbsp;
+            <input type="button" value="cancel"> &nbsp;
+        </form>
+    </boyd>
+</html>
