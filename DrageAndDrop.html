@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML Drag and Drop</title>
+        <style>
+            h2{
+                background-color: aquamarine;
+                width: 35%;
+                text-align: center;
+            }
+            #demo{
+                width: 340px;
+                height: 70px;
+                padding: 10px;
+                border: 1px solid tomato;
+            }
+        </style>
+        <script>
+            function allowDrop(ev){
+                ev.preventDefault();
+            }
+            function drag(ev){
+                ev.dataTransfer.setData("text", ev.target.id);
+            }
+            function drop(ev){
+                ev.preventDefault();
+                var data = ev.dataTransfer.getData("text");
+                ev.target.appendChild(document.getElementById(data));
+            }
+        </script>
+    </head>
+
+    <boyd>
+        <h2>Exploring HTML Drag & drop features </h2>
+        <div id = "demo" ondrop="drop(event)" ondragover="allowDrop(event)"></div><br><br>
+        <img id="dragg" src="/Users/sufiyanahmad/Downloads/books.jpg" draggable="true" ondragstart="drag(event)" width="300" height="70"> 
+    </boyd>
+</html>
