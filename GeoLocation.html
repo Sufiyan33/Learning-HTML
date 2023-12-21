@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML GeoLocation</title>
+        <style>
+            h1{
+                background-color: rgb(220, 147, 50);
+                width: 30%;
+                text-align: center;
+            }
+        </style>
+    </head>
+
+    <boyd>
+        <h1>HTMl GeoLocation</h1>
+        <p>Click on below button to get your location</p>
+        <button type="button" onclick="getLocation()">get location</button>
+        <p id="demo"></p>
+
+        <script>
+            const x = document.getElementById("demo");
+
+            function getLocation(){
+                if(navigator.geolocation){
+                    navigator.geolocation.getCurrentPosition(showPosition);
+                }else{
+                    x.innerHTML = "GeoLocation is not supported by your browsers.";
+                }
+            }
+
+            function showPosition(){
+                x.innerHTML = "Latitude: "+ position.coords.latitude+ "<br>Longitude: " + position.coords.longitude;
+             }
+        </script>
+    </boyd>
+</html>
